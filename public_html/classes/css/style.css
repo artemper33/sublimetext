@@ -1,0 +1,498 @@
+* {box-sizing: border-box}
+html {
+    font-family: sans-serif;
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -ms-overflow-style: scrollbar;
+    -webkit-tap-highlight-color: transparent;
+}
+body {
+    margin: 0;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    background-color: #fff;
+    position:relative;
+}
+ol, ul {
+    list-style: none;
+}
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+.header {
+width: 100%;
+height: 56px;
+background: #C8DEF6;
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.header_inner{
+    display: flex;
+    padding-top: 13px;
+    padding-left: 12px;
+}
+.nav a {
+    display: inline-block; /*делаем чтобы наша ссылка из строчного элемента превратилась в строчно-блочный*/
+    color: #111;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 18px;
+    padding-left: 30px;
+}
+.nav a:after {
+display: block; /*превращаем его в блочный элемент*/
+content: ""; /*контента в данном блоке не будет поэтому в кавычках ничего не ставим*/
+height: 1.5px; /*задаём высоту линии*/
+width: 0%; /*задаём начальную ширину элемента (линии)*/
+background-color: #111; /*цвет фона элемента*/
+transition: width 0.4s ease-in-out; /*данное свойство отвечает за плавное изменение ширины. Здесь можно задать время анимации в секундах (в данном случае задано 0.4 секунды)*/
+}
+.nav a:hover:after,
+.nav a:focus:after {
+width: 100%;
+}
+.logo a{
+    font-size: 30px;
+    font-weight: 600;
+    color: black;
+    text-decoration: none;
+}
+.logo{
+    margin: -12px 0px 0px 0px;
+}
+.container {
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.top-slide{
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.slideshow{
+    position: relative;
+    border-radius: 13px;
+    overflow: hidden;
+    margin: 50px 0px 50px 0px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.slideshow img {
+max-width: 970px;
+}
+.mySlides {
+    display: none
+}
+      /* Измените положение "next button" */
+      .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+      }
+      /* Добавьте черный фоновый цвет с небольшой прозрачностью*/
+      .prev:hover, .next:hover {
+      background-color: rgba(0,0,0,0.8);
+      }
+      /* Подпись под изображением */
+      .text {
+        margin: -135px 0px 0px 13px;
+        font-size: 14px;
+      }
+      .text1 {
+        margin: -135px 0px 0px 13px;
+        font-size: 14px;
+      }
+      .text1 h1 {
+        margin: -135px 0px 0px 13px;
+        font-size: 14px;
+      }
+      .text2 {
+        margin: -135px 0px 0px 13px;
+        font-size: 14px;
+      }
+      /* Точки/маркеры/указатели */
+      .dot {
+      cursor: pointer;
+      height: 13px;
+      width: 13px;
+      margin: 90px 0px 50px 3px;
+      background-color: #C8DEF6;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+      }
+.active, .dot:hover {
+    background-color: #666;
+}
+.product-item {
+   text-align: center;
+   margin: 0 auto;
+   display: inline-block;
+   width: 230px;
+}
+.product-item_img {
+   display: block;
+    width: 100%;
+}
+.product-list {
+   background: #C8DEF6;
+   padding: 15px 0px;
+   border-bottom-left-radius: 10px;
+   border-bottom-right-radius: 10px;
+}
+.product-list a:hover {
+  color: #666666;
+}
+.product-list h3 {
+   font-size: 18px;
+   font-weight: 400;
+   color: #444444;
+   margin: 0 0 10px 0;
+}
+.price {
+   font-size: 18px;
+   color: black;
+   display: block;
+   margin-bottom: 12px;
+}
+.button {
+   text-decoration: none;
+   display: inline-block;
+   padding: 0 12px;
+   color: black;
+   font-size: 18px;
+}
+.row {
+    max-width: 1000px;
+}
+.Katalog {
+    font-weight: 500;
+    font-size: 20px;
+    margin: 0px 878px 20px 0px;
+}
+
+#why_us{
+    padding: 63px 20px 20px 33px;
+}
+#why_us h2{
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+.why_item{
+display: flex;
+justify-content: space-between;
+margin: 20px 0px 20px 0px;
+}
+.why_item2{
+display: flex;
+justify-content: space-between;
+margin: 20px 0px 20px 0px;
+}
+.why_item3{
+display: flex;
+justify-content: space-between;
+margin: 0px 0px 10px 10px;
+}
+.img-responsible1{
+    width: 75px;
+    height: 45px;
+    margin-top: 6px;
+}
+.description1 {
+        font-size: 18px;
+    max-width: 320px;
+    margin-left: -290px;
+}
+.img-responsible2{
+    width: 75px;
+    height: 45px;
+    margin-top: 6px;
+}
+.description2 {
+    font-size: 18px;
+    max-width: 168px;
+        margin-left: 11px;
+}
+.img-responsible3{
+    width: 93px;
+    height: 60px;
+    margin: 11px 0px 0px -8px;
+}
+.description3 {
+    font-size: 18px;
+    max-width: 320px;
+    margin-left: -303px;
+}
+.img-responsible4{
+    width: 93px;
+    height: 60px;
+    margin: -12px 2px 0px -8px;
+}
+.description4 {
+    font-size: 18px;
+    max-width: 169px;
+    margin-top: -8px;
+}
+.row1 {
+    max-width: 1000px;
+}
+.catalog h2{
+    font-size: 20px;
+    padding: 10px 10px 20px 10px;
+}
+.akcii h2{
+  font-size: 20px;
+    padding: 10px 10px 20px 10px;  
+}
+.contact__text {
+    width: 48%;
+    margin: 0 auto;
+    font-size: 16px;
+    font-style: italic;
+    color: #6c6c6c;
+    text-align: center;
+    padding-top: 55px;
+
+}
+.contact__form {
+    padding-top: 95px;
+    width: 60%;
+    margin: 0 auto;
+}
+.contact__name-email {
+    display: flex;
+    justify-content: space-between;
+}
+.contact__email-name {
+    width: 45%;
+}
+.line__sections {
+    width: 98px;
+    height: 4px;
+    background-color: #c8def6;
+    display: block;
+    margin: 0 auto;
+}
+.title__sections {
+    padding-top: 50px;
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+}
+.contact__name {
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #636363;
+}
+.contact__name span {
+    color: #db0000;
+    margin-left: 5px;
+}
+.form__name {
+    width: 100%;
+    height: 40px;
+    border: 1px solid #999999;
+}
+.form__mail {
+    width: 100%;
+    height: 40px;
+    border: 1px solid #999999;
+}
+.contact__message {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 30px;
+    width: 100%;
+}
+.form__message {
+    width: 100%;
+    height: 160px;
+    margin: 0;
+    padding: 0;
+    border: 1px solid #999999;
+}
+.contact__btn {
+    display: flex;
+    justify-content: flex-end;
+}
+.contact__submit {
+    text-transform: uppercase;
+    background-color: #c8def6;
+    border: none;
+    font-size: 16px;
+    color: #111;
+    padding: 15px 70px;
+    margin-bottom: 100px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+.contact__submit:hover {
+    background-color: #5da6f5;
+    transition: all 0.5s ease;
+}
+
+/*/Footer/*/
+.container_custom{
+    width: 65%;
+    margin: 0 auto;
+    max-width: 1920px;
+}
+footer{
+    background-color: #C8DEF6;
+    height: 150px;
+}
+footer .mnu_footer{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+}
+.col_mnu_footer {
+    padding-top: 30px;
+}
+.col_mnu_footer li a {
+text-decoration: none;
+font-size: 16px;
+color: #111;
+font-weight: 500;
+}
+.col_mnu_footer1{
+margin-top: 10px;
+line-height: 0.2;
+text-align: center;
+padding-top: 30px;
+}
+.col_mnu_footer1 p {
+font-weight: 500;
+text-decoration: none;
+}
+.col_mnu_footer1 img {
+    display: inline-block;
+    margin-right: 5px;
+    text-decoration: none;  
+}
+.col_mnu_footer2 {
+margin-top: 37px;
+}
+.col_mnu_footer2 p {
+    font-weight: 500;
+    margin-bottom: 0;
+    line-height: 0.5;
+    text-align: left;
+}
+ul.breadcrumb {
+  padding: 20px 0px 0px 14px;
+  list-style: none;
+}
+
+/* Отображение элементов списка бок о бок */
+ul.breadcrumb li {
+  display: inline;
+  font-size: 16px;
+}
+
+/* Добавить символ косой черты (/) перед/за каждым элементом списка */
+ul.breadcrumb li+li:before {
+  padding: 8px;
+  color: black;
+  content: "/\00a0";
+}
+
+/* Добавить цвет для всех ссылок внутри списка */
+ul.breadcrumb li a {
+  color: #0275d8;
+  text-decoration: none;
+}
+
+/* Добавить цвет на наведении курсора мыши */
+ul.breadcrumb li a:hover {
+  color: #01447e;
+  text-decoration: underline;
+}
+.Abouth {
+    padding: 20px 0px 10px 14px;
+}
+.Abouth h1 {
+    font-size: 24px;
+}
+.descr {
+    font-weight: 400;
+    font-size: 18px;
+    padding: 20px 0px 320px 0px;
+}
+.descrdostavka {
+    font-weight: 400;
+    font-size: 16px;
+    margin: 20px 0px 320px 14px;
+}
+.descrsitemap{
+        font-weight: 400;
+    font-size: 16px;
+    margin: 20px 0px 600px 14px;
+}
+.Contacth {
+    padding: 20px 0px 10px 12px;
+}
+.Contacth h1 {
+    font-size: 24px;
+}
+.Contacth-info p {
+    font-size: 16px;
+}
+.map {
+    padding:0px 0px 100px 12px;
+}
+.title__sections {
+    margin-top: 30px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    margin: 10px 0;
+    padding: 10px;
+    border: unset;
+    border-bottom: 2px solid #e3e3e3;
+    outline: none;
+}
+
+button {
+    padding: 10px;
+    background: #e3e3e3;
+    border: unset;
+    cursor: pointer;
+}
+
+.msg {
+    border: 2px solid #ffa908;
+    border-radius: 3px;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.logout {
+    color: #b7625c;
+}
+.aut {
+        height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sigin {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
